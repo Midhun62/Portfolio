@@ -29,6 +29,105 @@ a {
   gap: 10px 40px; 
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures the navbar stays on top of other content */
+  background-color: inherit; /* Keeps the background color consistent */
+  transition: background-color 0.3s ease; /* Optional: adds a smooth transition for background color */
+}
+
+main { 
+  padding-top: 80px;
+}
+
 .fixed-nav {
   padding-top: 100px;
 }
+
+@keyframes jelly {
+  0%, 100% {
+    transform: scale(1);
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  }
+  25% {
+    transform: scale(1.1);
+    border-radius: 60% 40% 50% 50% / 50% 50% 60% 40%;
+  }
+  50% {
+    transform: scale(0.9);
+    border-radius: 50% 50% 60% 40% / 40% 60% 50% 50%;
+  }
+  75% {
+    transform: scale(1.05);
+    border-radius: 40% 60% 50% 50% / 50% 50% 40% 60%;
+  }
+}
+
+.animate-jelly {
+  animation: jelly 5s infinite ease-in-out;
+}
+
+.card-container {
+  perspective: 1000px;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.front {
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.typing-container {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid;
+  white-space: nowrap;
+  animation: blink 0.5s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.blinking {
+  animation: blink 1s infinite;
+}
+
