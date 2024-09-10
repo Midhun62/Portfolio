@@ -115,16 +115,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40 pt-20">
-        <section id='home' className="min-h-screen py-8 sm:py-10 lg:py-12">
+        <section id="home" className="min-h-screen py-8 sm:py-10 lg:py-12">
           <nav
-            className={`px-32 py-6 mb-8 flex justify-between dark:text-white fixed top-0 left-0 w-full z-50 bg-white dark:bg-gray-900 items-center transition-all duration-300 ${isScrolled ? "bg-white/30 backdrop-filter backdrop-blur-lg border-b border-gray-200 dark:border-gray-800" : ""
+            className={`px-16 py-6 mb-8 flex justify-between dark:text-white fixed top-0 left-0 w-full z-50 bg-white dark:bg-gray-900 items-center transition-all duration-300 ${isScrolled ? "bg-white/30 backdrop-filter backdrop-blur-lg border-b border-gray-200 dark:border-gray-800" : ""
               }`}
           >
             <div className="flex items-center">
-              <h1 className="font-burtons text-xl px-2 py-2 rounded-md transition-all duration-500 ease-in-out transform hover:bg-gradient-to-r from-cyan-500 to-teal-500 hover:text-white hover:scale-105 hover:rotate-2 hover:shadow-lg">
+              <h1 className="font-burtons text-lg sm:text-xl px-2 py-2 rounded-md transition-all duration-500 ease-in-out transform hover:bg-gradient-to-r from-cyan-500 to-teal-500 hover:text-white hover:scale-105 hover:rotate-2 hover:shadow-lg">
                 MIDHUN M
               </h1>
             </div>
+
             <ul className="hidden md:flex items-center space-x-4">
               <li>
                 <a href="#home" className="text-xl hover:bg-gradient-to-r from-cyan-500 to-teal-500 px-2 py-2 rounded-md hover:text-white">Home</a>
@@ -224,7 +225,7 @@ export default function Home() {
         </section>
         <section id="about" className="py-8">
           <div className="max-w-7xl mx-auto px-4">
-            <h3 className="text-3xl py-1 dark:text-white pb-8">About Me</h3>
+            <h3 className="text-3xl py-1 dark:text-white pb-8 font-semibold">About Me</h3>
             <div className="text-xl dark:text-white">I am a frontend web developer with a passion for creating interactive and responsive web applications. I have experience working with HTML, CSS, JavaScript, React, Python, Mysql and Git. I am a quick learner and I am always looking to expand my knowledge and skill set. I am a team player and I am excited to work with others to create amazing applications.
               {/* techniology cards */}
               <div className="mt-12 mb-12">
@@ -464,7 +465,7 @@ export default function Home() {
 
         <section id="Projects">
           <div className="py-8">
-            <h3 className="text-2xl md:text-3xl py-1 dark:text-white">Projects</h3>
+            <h3 className="text-2xl md:text-3xl py-1 dark:text-white font-semibold">Projects</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               As I continue to grow in my journey as a web developer, I am currently working on a variety of web-based projects, refining my skills and expanding my portfolio. I am actively learning and preparing to venture into app development, with plans to start building innovative applications very soon.
             </p>
