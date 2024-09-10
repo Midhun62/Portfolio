@@ -8,8 +8,6 @@ import {
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import React, { useState, useEffect } from "react";
-import deved from "../public/pic.png";
-import Image from "next/image";
 // import EducationSection from "../pages/EducationSection";
 
 export default function Home() {
@@ -188,8 +186,8 @@ export default function Home() {
           <div className="relative mx-auto w-32 h-32 md:w-56 md:h-56 mt-20"> {/* Adjusted size */}
             <div className="absolute inset-0 bg-teal-500 rounded-full animate-jelly"></div>
             <div className="relative w-full h-full rounded-full overflow-hidden bg-white shadow-xl hover:scale-105 transition-transform">
-              <Image
-                src={deved}
+              <img
+                src="/pic.png"
                 layout="fill"
                 objectFit="cover"
                 alt="Profile Picture"
