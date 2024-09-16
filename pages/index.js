@@ -226,7 +226,7 @@ export default function Home() {
         <section id="about" className="py-8">
           <div className="max-w-7xl mx-auto px-4">
             <h3 className="text-3xl py-1 dark:text-white pb-8 font-semibold">About Me</h3>
-            <div className="text-xl dark:text-white">I am a frontend web developer with a passion for creating interactive and responsive web applications. I have experience working with HTML, CSS, JavaScript, React, Python, Mysql and Git. I am a quick learner and I am always looking to expand my knowledge and skill set. I am a team player and I am excited to work with others to create amazing applications.
+            <div className="text-md leading-8 text-gray-800 dark:text-gray-200">I am a frontend web developer with a passion for creating interactive and responsive web applications. I have experience working with HTML, CSS, JavaScript, React, Python, Mysql and Git. I am a quick learner and I am always looking to expand my knowledge and skill set. I am a team player and I am excited to work with others to create amazing applications.
               {/* techniology cards */}
               <div className="mt-12 mb-12">
                 <h2 className="text-3xl font-bold text-center mb-8 text-teal-500 dark:text-teal-500">Tech-Skills</h2>
